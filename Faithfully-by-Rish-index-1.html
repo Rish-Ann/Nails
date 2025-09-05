@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faithfully by Rish — Nails • Brows • Make Up</title>
+  <meta name="description" content="Faithfully by Rish: Nails, Brows y Make Up. Reserva tus servicios de belleza en Aruba.">
+  <style>
+    :root{
+      --brand:#c71585;
+      --brand-2:#f7cad0;
+      --bg:#fff7fb;
+      --text:#2b2b2b;
+      --muted:#6b6b6b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header.hero{
+      background: radial-gradient(1200px 600px at 80% -10%, #ffd1e8 0, transparent 60%),
+                  linear-gradient(135deg, var(--brand-2), #f8a5c2);
+      color:#fff;
+      padding: 4rem 1rem 3rem;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+    .brand{font-size: clamp(2rem, 5vw, 3rem); margin:0; letter-spacing:.5px}
+    .tagline{margin:.25rem 0 0;font-weight:500;opacity:.95}
+    nav{
+      position: sticky; top:0; z-index:10;
+      background:#fff; border-bottom:1px solid #f0e3ea;
+      box-shadow: 0 6px 18px rgba(199,21,133,.06);
+    }
+    nav .inner{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:1rem; padding:.65rem 1rem; max-width:1100px; margin:0 auto;
+    }
+    nav a{
+      color:var(--brand); text-decoration:none; font-weight:600; margin:0 .5rem;
+    }
+    .btn{
+      display:inline-block; padding:.7rem 1rem; border-radius:999px;
+      font-weight:700; text-decoration:none;
+    }
+    .btn-primary{ background:var(--brand); color:#fff; }
+    .btn-outline{ border:2px solid var(--brand); color:var(--brand); }
+    section{padding:3rem 1rem}
+    h2.section-title{
+      text-align:center; margin:0 0 1.25rem; color:var(--brand);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+    }
+    .grid{
+      display:grid; gap:1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card{
+      background:#fff; border-radius:18px; padding:1.25rem;
+      box-shadow: 0 8px 24px rgba(199,21,133,.08);
+      transition: transform .25s ease;
+    }
+    .card:hover{ transform: translateY(-4px) }
+    .price-list{list-style:none; padding:0; margin:.5rem 0 0}
+    .price-list li{
+      display:flex; justify-content:space-between; gap:1rem;
+      padding:.5rem .25rem; border-bottom:1px dashed #f0e3ea;
+    }
+    .price-list li:last-child{border-bottom:none}
+    .muted{color:var(--muted)}
+    .two-col{
+      display:grid; gap:1.25rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width:900px){
+      .two-col{ grid-template-columns: 1.2fr .8fr; align-items:center }
+    }
+    .gallery{
+      display:grid; gap:10px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    .gallery .ph{
+      aspect-ratio: 4/3; background:linear-gradient(135deg,#ffe1ee,#ffd7f0);
+      border-radius:14px; display:flex; align-items:center; justify-content:center;
+      color:#9c2a6f; font-weight:700;
+    }
+    footer{
+      background:#fff; border-top:1px solid #f0e3ea; text-align:center; padding:1.5rem;
+      color:#7a7a7a
+    }
+    .notice{
+      background:#fff1f7; border:1px solid #ffd5e8; color:#9c2a6f;
+      padding:1rem; border-radius:12px; font-size:.95rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="inner">
+      <strong>Faithfully by Rish</strong>
+      <div>
+        <a href="#servicios">Servicios</a>
+        <a href="#facebook">Facebook</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="brand">Faithfully by Rish</h1>
+      <p class="tagline">Nails • Brows • Make Up</p>
+      <p style="margin-top:1rem">
+        <a class="btn btn-primary" href="#servicios">Ver servicios</a>
+        <a class="btn btn-outline" href="#facebook">Ver fotos (Facebook)</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="servicios">
+      <h2 class="section-title">Servicios & Precios (florin)</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Nails</h3>
+          <ul class="price-list">
+            <li><span>Fullset acrylic</span><strong>65 florin</strong></li>
+            <li><span>Refill acrylic</span><strong>55 florin</strong></li>
+            <li><span>Acrylic overlay</span><strong>50 florin</strong></li>
+            <li><span>BIAB manicure</span><strong>50 florin</strong></li>
+            <li><span>Gelpolish manicure</span><strong>40 florin</strong></li>
+            <li><span>Polygel fullset</span><strong>65 florin</strong></li>
+            <li><span>Polygel overlay</span><strong>50 florin</strong></li>
+            <li><span>Pedicure</span><strong>45 florin</strong></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Brows</h3>
+          <ul class="price-list">
+            <li><span>Henna brows</span><strong>50 florin</strong></li>
+            <li><span>Brow shapping with wax</span><strong>30 florin</strong></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Make Up</h3>
+          <ul class="price-list">
+            <li><span>Soft Glam</span><strong>125 florin</strong></li>
+            <li><span>Full Glam</span><strong>150 florin</strong></li>
+            <li><span>Carnival</span><strong>150 florin</strong></li>
+          </ul>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:.75rem">* Los precios están en florin (Afl). Puedes ajustar los montos cuando quieras.</p>
+    </section>
+
+    <section id="facebook" class="two-col">
+      <div>
+        <h2 class="section-title" style="text-align:left">Fotos y novedades</h2>
+        <p>Las fotos y publicaciones se cargan directamente desde la página de Facebook <strong>Faithfully by Rish</strong>. Así siempre estarán actualizadas sin tener que cambiar tu web.</p>
+        <p class="notice"><strong>Importante:</strong> si tu URL de Facebook es diferente, cambia el valor de <code>data-href</code> más abajo por la URL correcta. Ejemplo: <em>https://www.facebook.com/TuPagina</em>.</p>
+        <p>
+          <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.facebook.com/FaithfullybyRish">Abrir Facebook</a>
+        </p>
+      </div>
+      <div>
+        <!-- Facebook Page Plugin -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0" nonce="faithfully"></script>
+        <div class="fb-page"
+            data-href="https://www.facebook.com/FaithfullybyRish"
+            data-tabs="timeline,photos"
+            data-width="500"
+            data-height="520"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/FaithfullybyRish" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/FaithfullybyRish">Faithfully by Rish</a>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <h2 class="section-title">Galería (opcional)</h2>
+      <p class="muted" style="text-align:center">Si prefieres imágenes fijas en tu sitio, reemplaza estos cuadros por tus fotos o déjalo solo con el módulo de Facebook.</p>
+      <div class="gallery">
+        <div class="ph">Uñas</div>
+        <div class="ph">Brows</div>
+        <div class="ph">Make Up</div>
+        <div class="ph">BIAB</div>
+        <div class="ph">Acrílico</div>
+        <div class="ph">Polygel</div>
+      </div>
+    </section>
+
+    <section id="contacto" class="two-col">
+      <div class="card">
+        <h3>Reserva / Contacto</h3>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/FaithfullybyRish" target="_blank" rel="noopener">Faithfully by Rish</a></p>
+        <p class="muted">Agrega aquí tu teléfono, WhatsApp, email o ubicación si lo deseas.</p>
+      </div>
+      <div class="card">
+        <h3>Cómo actualizar tu web</h3>
+        <ol>
+          <li>Abre el archivo <code>index.html</code> con el bloc de notas (o en el móvil con un editor).</li>
+          <li>Para cambiar precios, busca la sección <strong>Servicios</strong> y edita los números.</li>
+          <li>Para cambiar colores, ajusta las variables en <code>:root</code> (por ejemplo <code>--brand</code>).</li>
+          <li>Para enlazar tu Facebook, revisa <code>data-href</code> y pon tu URL exacta.</li>
+          <li>Para poner fotos propias, reemplaza los cuadros de la <strong>Galería</strong> por etiquetas <code>&lt;img src="tufoto.jpg" alt="..."&gt;</code>.</li>
+          <li>Sube el archivo actualizado a GitHub Pages (mismo nombre <code>index.html</code>).</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Faithfully by Rish — Hecho con 💖
+  </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
